@@ -26,3 +26,7 @@ While in Jest watch mode, press `-` to open up the options prompt (the first `-`
 then keep typing the options you want to apply and hit enter to confirm.
 
 Note that Jest only allows select options to be changed at runtime ([documentation](https://jestjs.io/docs/en/watch-plugins#authorized-configuration-keys) & updateConfigAndRun [source code](https://github.com/facebook/jest/blob/master/packages/jest-cli/src/watch.js)).
+
+### Example
+
+`--no-bail --collectCoverage --collectCoverageFrom **/*.js`
