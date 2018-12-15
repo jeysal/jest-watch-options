@@ -9,7 +9,8 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3"
   },
   "dependencies": {
     "ansi-escapes": "^3.1.0",
