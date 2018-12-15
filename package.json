@@ -8,7 +8,7 @@
     "cli",
     "options"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "author": {
     "name": "Tim Seckinger",
     "email": "seckinger.tim@gmail.com",
@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "jest --watchAll",
+    "test": "jest --watch",
     "lint": "prettier -l \"**/*.{js,json,md}\"",
     "format": "prettier --write \"**/*.{js,json,md}\""
   },

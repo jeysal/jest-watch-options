@@ -7,7 +7,8 @@ const {
   eraseLine,
   eraseScreen,
 } = require('ansi-escapes');
-const yargs = require('yargs');
+
+const { parseOptions } = require('./options');
 
 class OptionsPlugin {
   constructor({ stdin, stdout }) {
@@ -40,7 +41,7 @@ class OptionsPlugin {
           this._stdout.write(commandLine);
         },
         commandLine => {
-          const options = yargs(commandLine.split(' ')).argv;
+          const options = parseOptions(commandLine);
           updateConfigAndRun(options);
           resolve();
         },
