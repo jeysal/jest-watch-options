@@ -21,6 +21,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --watch",
+    "test-once": "jest",
     "lint": "prettier -l \"**/*.{js,json,md}\"",
     "format": "prettier --write \"**/*.{js,json,md}\""
   },
