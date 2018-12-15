@@ -1,4 +1,24 @@
 {
+  "name": "jest-watch-options",
+  "version": "1.0.0",
+  "description": "A Jest watch mode plugin to change CLI options while Jest is running",
+  "keywords": [
+    "jest",
+    "watch",
+    "cli",
+    "options"
+  ],
+  "main": "index.js",
+  "author": {
+    "name": "Tim Seckinger",
+    "email": "seckinger.tim@gmail.com",
+    "url": "https://github.com/jeysal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeysal/jest-watch-options"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "jest --watchAll",
     "lint": "prettier -l \"**/*.{js,json,md}\"",
