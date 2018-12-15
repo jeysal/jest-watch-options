@@ -1,6 +1,6 @@
 {
   "name": "jest-watch-options",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Jest watch mode plugin to change CLI options while Jest is running",
   "keywords": [
     "jest",
