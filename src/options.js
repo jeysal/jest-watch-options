@@ -42,4 +42,36 @@ const parseOptions = commandLine => {
   return options;
 };
 
-module.exports = { parseOptions };
+// yargs getCompletion always throws for some reason, so we implement this manually
+const options = [
+  ...['b', 't', 'u'].map(option => `-${option}`),
+  ...[
+    'bail',
+    'changedSince',
+    'coverage',
+    'collectCoverageFrom',
+    'notify',
+    'testNamePattern',
+    'testPathPattern',
+    'updateSnapshot',
+    'verbose',
+    'watch',
+    'watchAll',
+  ].map(option => `--${option}`),
+  ...[
+    'bail',
+    'changedSince',
+    'coverage',
+    'notify',
+    'testNamePattern',
+    'testPathPattern',
+    'verbose',
+  ].map(option => `--no-${option}`),
+];
+const completeOptions = commandLine => {
+  const args = commandLine.split(' ');
+  const last = args[args.length - 1];
+  return options.filter(option => option.startsWith(last));
+};
+
+module.exports = { completeOptions, parseOptions };

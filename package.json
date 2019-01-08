@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "ansi-escapes": "^3.1.0",
+    "chalk": "^2.4.2",
     "jest-watcher": "^23.4.0",
     "yargs": "^12.0.5"
   }
