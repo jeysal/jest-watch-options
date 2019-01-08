@@ -2,6 +2,7 @@
 
 ## 1.2.0
 
+- fix `--no-coverage`
 - show list of matching options
 
 ## 1.1.0

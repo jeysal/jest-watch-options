@@ -25,9 +25,9 @@ const parseOptions = commandLine => {
     throw error;
   }
 
-  if (options.coverage) {
+  if (options.coverage != null) {
+    options.collectCoverage = options.coverage;
     delete options.coverage;
-    options.collectCoverage = true;
   }
 
   if (options.watch) {
